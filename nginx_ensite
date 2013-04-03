@@ -29,12 +29,12 @@
 ### DEALINGS IN THE SOFTWARE.
 
 ## The nginx binary.
-NGINX=$(which nginx)
+NGINX=/opt/nginx/sbin/nginx
 [ -x $NGINX ] || exit 0
 
 ## The paths for both nginx configuration files and the sites
 ## configuration files and symbolic link destinations.
-NGINX_CONF_DIR=/etc/nginx
+NGINX_CONF_DIR=/opt/nginx
 AVAILABLE_SITES_PATH="$NGINX_CONF_DIR/sites-available"
 ENABLED_SITES_PATH="$NGINX_CONF_DIR/sites-enabled"
 AVAILABLE_SITES_DIR="sites-available"
